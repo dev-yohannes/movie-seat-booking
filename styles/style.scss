@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background-color: rgb(28, 28, 54);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pick-movie {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+
+  select {
+    border-radius: 5px;
+  }
+}
+
+.seat-result {
+  background-color: rgb(18, 18, 36);
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  height: 30px;
+  border-radius: 5px;
+
+  .na-result-parent,
+  .selected-result-parent,
+  .occupied-result-parent {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: gray;
+
+    .na-result,
+    .selected-result,
+    .occupied-result {
+      height: 12px;
+      width: 15px;
+      border-top-right-radius: 50%;
+      border-top-left-radius: 50%;
+      background-color: gray;
+    }
+
+    .selected-result {
+      background-color: cyan;
+    }
+
+    .occupied-result {
+      background-color: white;
+    }
+  }
+}
+
+.screen {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0px;
+
+  .movie-screen {
+    height: 50px;
+    width: 80%;
+    background-color: white;
+  }
+}
+
+.seat-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+
+  .left-seat div,
+  .center-seat div,
+  .right-seat div {
+    display: flex;
+
+    div {
+      height: 12px;
+      width: 15px;
+      margin: 2px 4px;
+      border-top-right-radius: 50%;
+      border-top-left-radius: 50%;
+      background-color: gray;
+    }
+  }
+}
+
+.text {
+  p {
+    color: white;
+  }
+}
+
+.selected {
+  background-color: cyan;
+}
+
+.occupied {
+  background-color: white;
+}
